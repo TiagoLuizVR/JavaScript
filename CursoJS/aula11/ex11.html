@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nacionalidade</title>
+</head>
+<body>
+    <h1>Nos diga onde você nasceu</h1>
+    <label for="itxtnac">Qual seu país natal?</label>
+    <input type="text" name="txtnac" id="itxtnac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var pais = document.getElementById('itxtnac').value
+            res = document.getElementById('res')
+            res.innerHTML = (`Você nasceu em <strong>${pais}</strong>`)
+            if(pais == 'Brasil' || pais == 'brasil') {
+                res.innerHTML += ('<p>Você é <strong>brasileiro</strong>!</p>')
+            }else {
+                res.innerHTML += ('<p>Você é estrangeiro!</p>')
+            }
+        }
+    </script>
+</body>
+</html>
