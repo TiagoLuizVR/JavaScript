@@ -4,14 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Idade</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: #4a854f;
+        }
+        div#container {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            border-radius: 7px;
+            padding: 10px;
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.412);
+        }
+        div#container > div, input[type='button'] {
+            margin: 10px 0px;
+        }
+        div#show {
+            text-align: center;
+        }
+        div#show img {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <main>
-        <h1>Verificador de Idade</h1>
-        <div>
-            <label for="iano">Ano de Nascimento:</label>
-            <input type="number" name="ano" id="iano">
+            <h1 style="text-align: center; color: white;">Verificador de Idade</h1>
+
+        <div id="container">
+            <div>
+                <label for="iano">Ano de Nascimento:</label>
+                <input type="number" name="ano" id="iano">
+            </div>
+            <p>
+                Sexo:
+                <input type="radio" name="sexo" id="ifem">
+                <label for="ifem">Femenino</label>
+                <input type="radio" name="sexo" id="imasc">
+                <label for="imasc">Masculino</label>
+            </p>
+            <input type="button" value="Verificar" onclick="calcular()">
+
+            <div id="show">
+                <p id="para">Responda as perguntas para verificar sua idade!</p>
+            </div>
         </div>
     </main>
+
+    <script src="scripts/script2.js"></script>
 </body>
 </html>

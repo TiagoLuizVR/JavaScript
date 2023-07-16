@@ -1,0 +1,5 @@
+var agr = new Date()
+var ano = agr.getFullYear()
+var idade = document.getElementById('iano')
+var caixa = document.getElementById('show')
+var p = document.getElementById('para')
