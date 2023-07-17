@@ -8,7 +8,7 @@ function calcular() {
 
     p.innerHTML = (`Detectamos que você é ${sexo} e tem ${idade} anos`)
 
-    if(sexo == 'homem' && idade != null) {
+    if(sexo == 'homem') {
         if(idade < 13){
             caixa.innerHTML = ('<img src="imagens/menino.jpg" alt="">')
         } else if(idade < 19){
@@ -19,7 +19,7 @@ function calcular() {
         else {
             caixa.innerHTML = ('<img src="imagens/senhor.jpg" alt="">')
         }
-    } else if(sexo == 'mulher' && idade != null) {
+    } else if(sexo == 'mulher') {
         if(idade < 13){
             caixa.innerHTML = ('<img src="imagens/menina.jpg" alt="">')
         } else if(idade < 19){
