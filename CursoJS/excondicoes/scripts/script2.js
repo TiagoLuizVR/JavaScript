@@ -5,6 +5,8 @@ function calcular() {
     var caixa = document.getElementById('show')
     var p = document.getElementById('para')
 
-    p.innerHTML = (`Detectamos que você é e tem ${idade} anos`)
+    const radio = document.querySelector("input[name='sexo']:checked").value
+
+    p.innerHTML = (`Detectamos que você é e tem ${radio} anos`)
 
 }
