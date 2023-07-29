@@ -17,17 +17,25 @@ function addplayer(){
             <div class="campos">
             <label for="ipontos${i}">Pontos Ganhos</label>
             <input type="number" name="pontos${i}" id="ipontos${i}">
-            <span class="material-symbols-outlined" onclick="somarpontos()">add</span>
+            <span class="material-symbols-outlined" onclick="somarpontos(${i})">add</span>
             <span class="material-symbols-outlined menos" onclick="removerpontos()">remove</span>
-            <p class="res${i}">Total:</p>
+            <div id="side">
+                <p>Total: </p><div id="res${i}">0</div>
+            </div>
             </div>
             </div>`)
-            
         }
     }
-    function somarpontos() {
-        for(var i = 0; i < nplayers; i++) {
-            
-        }
-    }
+
+}
+var tudo = [0,0,0,0,0,0,0,0,0,0]
+var listapontos = []
+
+function somarpontos(n) {
+    var valor = Number(document.getElementById(`ipontos${n}`).value)
+    var inserir = document.getElementById(`res${n}`)
+    listapontos[n] = valor
+    tudo[n] += listapontos[n]
+    
+    inserir.innerHTML = tudo[n]
 }

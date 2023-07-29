@@ -71,7 +71,8 @@ span:active {
     display: flex;
     align-items: center;
 }
-.campos > p {
+div#side {
+    display: flex;
     position: absolute;
-    right: 20px;
+    right: 10px;
 }
