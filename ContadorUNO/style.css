@@ -55,26 +55,23 @@ span {
     padding: 10px;
 }
 span.menos {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 span:active {
     background-color: #00000021;
 }
 .caixajogador input[type="number"] {
     height: 40px;
-    width: 100px;
+    width: 80px;
     padding: 2px;
     margin: 0px 3px;
     border-radius: 5px;
     border: 1px solid black;
 }
 .campos {
-    position: relative;
     display: flex;
     align-items: center;
 }
 div#side {
     display: flex;
-    position: absolute;
-    right: 10px;
 }
