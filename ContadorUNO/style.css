@@ -52,16 +52,18 @@ span {
     cursor: pointer;
     color: gray;
     border-radius: 50%;
+    padding: 10px;
 }
 span.menos {
-    margin-left: 5px;
+    margin-left: 20px;
 }
 span:active {
     background-color: #00000021;
 }
 .caixajogador input[type="number"] {
-    height: 30px;
+    height: 40px;
     width: 100px;
+    padding: 2px;
     margin: 0px 3px;
     border-radius: 5px;
     border: 1px solid black;
