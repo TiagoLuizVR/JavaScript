@@ -14,7 +14,7 @@ header h1 {
     color: white;
 }
 main {
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     background-color: white;
     border-radius: 10px;
