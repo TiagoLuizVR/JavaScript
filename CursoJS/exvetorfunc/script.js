@@ -18,28 +18,33 @@ function adicionar() {
         select.innerHTML += (`<option>Valor ${num} adicionado!</option>`)
     }
     document.getElementById('inum').value = ''
+    document.getElementById('show').innerHTML = ''
 }
 
 function finalizar() {
-    var caixa = document.getElementById('show')
-    var maior = numeros[0]
-    var menor = numeros[0]
-    var soma = 0
+    if(numeros.length == 0) {
+        alert('Insira números para continuar!')
+    } else {
+        var caixa = document.getElementById('show')
+        var maior = numeros[0]
+        var menor = numeros[0]
+        var soma = 0
 
-    for(var ii in numeros) {
-        if(maior < numeros[ii]) {
-            maior = numeros[ii]
+        for(var ii in numeros) {
+            if(maior < numeros[ii]) {
+                maior = numeros[ii]
+            }
+            if(menor > numeros[ii]) {
+                menor = numeros[ii]
+            }
+            soma += numeros[ii]
         }
-        if(menor > numeros[ii]) {
-            menor = numeros[ii]
-        }
-        soma += numeros[ii]
+
+        
+        caixa.innerHTML = (`Foram adicionados ${numeros.length} números!<br>
+        O maior número foi ${maior}<br>
+        O menor número foi ${menor}<br>
+        A soma de todos os números é ${soma}<br>
+        A média de todos os números é ${soma/numeros.length}`)
     }
-
-    
-    caixa.innerHTML = (`Foram adicionados ${numeros.length} números!<br>
-    O maior número foi ${maior}<br>
-    O menor número foi ${menor}<br>
-    A soma de todos os números é ${soma}<br>
-    A média de todos os números é ${soma/numeros.length}`)
 }
