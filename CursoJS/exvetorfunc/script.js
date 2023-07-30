@@ -18,6 +18,7 @@ function adicionar() {
         select.innerHTML += (`<option>Valor ${num} adicionado!</option>`)
     }
     document.getElementById('inum').value = ''
+    document.getElementById('inum').focus()
     document.getElementById('show').innerHTML = ''
 }
 

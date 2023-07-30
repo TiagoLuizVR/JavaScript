@@ -39,6 +39,7 @@ function somarpontos(n) {
 
     inserir.innerHTML = tudo[n]
     document.getElementById(`ipontos${n}`).value = ''
+    document.getElementById(`ipontos${n}`).focus()
 }
 function removerpontos(n) {
     var valor = Number(document.getElementById(`ipontos${n}`).value)
@@ -48,4 +49,5 @@ function removerpontos(n) {
 
     inserir.innerHTML = tudo[n]
     document.getElementById(`ipontos${n}`).value = ''
+    document.getElementById(`ipontos${n}`).focus()
 }
