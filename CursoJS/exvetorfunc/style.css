@@ -25,6 +25,7 @@ main > div {
 }
 select {
     width: 150px;
+    padding: 3px;
 }
 input#inum {
     width: 100px;
