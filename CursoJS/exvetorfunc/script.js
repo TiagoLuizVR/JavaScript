@@ -45,6 +45,6 @@ function finalizar() {
         O maior número foi ${maior}<br>
         O menor número foi ${menor}<br>
         A soma de todos os números é ${soma}<br>
-        A média de todos os números é ${soma/numeros.length}`)
+        A média de todos os números é ${(soma/numeros.length).toFixed(2)}`)
     }
 }
